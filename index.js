@@ -5,14 +5,8 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 // const port =process.env.PORT ||  3001;
-const mysql = require("mysql");
 
-const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "SocialMedia",
-});
+
 
 // module.exports = db;
 const userRoute = require("./routes/User");
